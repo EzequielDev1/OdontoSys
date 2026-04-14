@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaPagamento">
+   <children>
+      <Line endX="678.8665771484375" layoutX="373.0" layoutY="46.0" startX="-100.0" startY="-3.814697265625E-6" stroke="DODGERBLUE" strokeWidth="3.0" />
+      <Text fill="#1a0aa9" layoutX="295.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAGAMENTO" wrappingWidth="310.9100036621094">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="btPesquisar" layoutX="983.0" layoutY="96.0" mnemonicParsing="false" onAction="#actionPesquisar" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #009000; -fx-background-radius: 100;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconLupa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tablePagamentos" layoutX="282.0" layoutY="159.0" prefHeight="548.0" prefWidth="761.0">
+         <columns>
+            <TableColumn fx:id="columnPaciente" prefWidth="238.4000244140625" text="Paciente" />
+            <TableColumn fx:id="columnProcedimento" prefWidth="246.933349609375" text="Procedimento" />
+            <TableColumn fx:id="columnValor" prefWidth="131.46673583984375" text="Valor" />
+            <TableColumn fx:id="columnData" prefWidth="146.13330078125" text="Data" />
+         </columns>
+      </TableView>
+      <Text layoutX="300.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pesquisar por Paciente">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="782.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pesquisar por Data">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPaciente" layoutX="295.0" layoutY="100.0" prefHeight="35.0" prefWidth="460.0" style="-fx-background-radius: 15;" />
+      <DatePicker fx:id="txtData" layoutX="780.0" layoutY="101.0" prefHeight="35.0" prefWidth="176.0" />
+      <Pane layoutX="24.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+      <Pane layoutX="16.0" prefHeight="720.0" prefWidth="234.0" style="-fx-background-color: #79B2E9;" />
+      <Pane layoutX="4.0" layoutY="-1.0" prefHeight="721.0" prefWidth="212.0" style="-fx-background-color: #1E90FF;" />
+      <Pane layoutX="-18.0" layoutY="-1.0" prefHeight="721.0" prefWidth="200.0" style="-fx-background-color: #381EFF;">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="124.0" layoutX="70.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/OdontoSys-master%20(1)/OdontoSys-master/OdontoSys/src/icons/iconDente.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="36.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ODONTO">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="100.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYS">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtUser" fill="WHITE" layoutX="72.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btAtendimento" layoutX="55.0" layoutY="359.0" mnemonicParsing="false" onAction="#actionAtendimento" prefHeight="42.0" prefWidth="120.0" style="-fx-border-radius: 10; -fx-background-radius: 15; -fx-border-color: #ffffff; -fx-background-color: #381EFF; -fx-border-width: 2;" text="Atendimento" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btSair" layoutX="64.0" layoutY="648.0" mnemonicParsing="false" onAction="#actionSair" prefHeight="42.0" prefWidth="102.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" text="Sair">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btPaciente" layoutX="55.0" layoutY="576.0" mnemonicParsing="false" onAction="#actionPaciente" prefHeight="42.0" prefWidth="120.0" style="-fx-border-radius: 10; -fx-background-radius: 15; -fx-border-color: #ffffff; -fx-background-color: #381EFF; -fx-border-width: 2;" text="Pacientes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btFuncionario" layoutX="55.0" layoutY="502.0" mnemonicParsing="false" onAction="#actionFuncionario" prefHeight="42.0" prefWidth="119.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-width: 2; -fx-background-color: #381EFF;" text="Funcionários" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btAgendamento" layoutX="55.0" layoutY="288.0" mnemonicParsing="false" onAction="#actionAgendamento" prefHeight="42.0" prefWidth="119.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-width: 2; -fx-background-color: #381EFF;" text="Agendamento" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btPagamento" layoutX="56.0" layoutY="431.0" mnemonicParsing="false" onAction="#actionPagamento" prefHeight="42.0" prefWidth="120.0" style="-fx-border-radius: 10; -fx-background-radius: 15; -fx-border-color: #ffffff; -fx-background-color: #381EFF; -fx-border-width: 2;" text="Pagamento" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" offsetY="3.0" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaProtese">
+   <children>
+      <Pane prefHeight="502.0" prefWidth="900.0">
+         <children>
+            <RadioButton fx:id="btProteseSim1" layoutX="651.0" layoutY="30.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao1" layoutX="764.0" layoutY="30.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <Text fx:id="txtProtese1" layoutX="44.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Já usou prótese antes?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese2" layoutX="44.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Está usando prótese atualmente?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese3" layoutX="42.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tem dificuldade para mastigar com a prótese?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <RadioButton fx:id="btProteseSim4" layoutX="651.0" layoutY="129.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao4" layoutX="764.0" layoutY="129.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <Text fx:id="txtProtese4" layoutX="42.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tem dificuldade para falar com a prótese?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <RadioButton fx:id="btProteseSim5" layoutX="651.0" layoutY="165.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao5" layoutX="764.0" layoutY="165.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <Text fx:id="txtProtese5" layoutX="43.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sente dor, machucados ou feridas com a prótese?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese6" layoutX="43.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Está satisfeito(a) com a estética do sorriso atual?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese7" layoutX="43.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teve dificuldade de adaptação com prótese anterior?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese8" layoutX="43.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percebe sensibilidade nos dentes de apoio?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese9" layoutX="41.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tem dificuldade para higienizar a prótese?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="txtProtese10" layoutX="40.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deseja trocar ou ajustar a prótese atual?">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <RadioButton fx:id="btProteseSim6" layoutX="651.0" layoutY="205.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao6" layoutX="764.0" layoutY="205.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseSim7" layoutX="651.0" layoutY="239.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao7" layoutX="764.0" layoutY="239.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseSim8" layoutX="651.0" layoutY="275.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao8" layoutX="764.0" layoutY="275.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseSim9" layoutX="651.0" layoutY="308.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao9" layoutX="764.0" layoutY="308.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseSim10" layoutX="651.0" layoutY="343.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao10" layoutX="764.0" layoutY="343.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseSim3" layoutX="651.0" layoutY="94.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao3" layoutX="764.0" layoutY="95.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseSim2" layoutX="651.0" layoutY="59.0" mnemonicParsing="false" text="Sim">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="btProteseNao2" layoutX="764.0" layoutY="59.0" mnemonicParsing="false" text="Não">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="474.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Desktop/OdontoSys/src/icons/iconSave.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="666.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Desktop/OdontoSys/src/icons/iconCancelar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="btSalvar" layoutX="508.0" layoutY="417.0" mnemonicParsing="false" onAction="#actionSalvar" prefHeight="40.0" prefWidth="146.0" style="-fx-background-radius: 15; -fx-background-color: #32A24E;" text=" Salvar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Cadastrar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1167.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaScroll">
+   <children>
+      <Text layoutX="406.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="História médica:" wrappingWidth="177.4028320312501">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faz tratamento médico?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="38.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tem alergia a algum medicamento?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="38.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Está tomando algum medicamento?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="38.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Possui alguma doença ou alteração clínica?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foi hospitalizado ou submeteu-se à cirurgia?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="36.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quando se corta, sangra muito?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="38.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração da pressão?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="38.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingestão de bebidas alcoólicas?  ">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uso de cigarro?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grávida?">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="36.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tem ou teve algumas dessas doenças?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardiopatia">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="36.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anemia">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rinite">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="32.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hepatite">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="202.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bronquite">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="202.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diabetes">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="198.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sinusite">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="197.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colesterol">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="406.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HIV">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="403.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aids">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="392.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Herpes">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="32.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asma">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="186.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Febre reumática">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="22.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queixa principal: ">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtBoca01" layoutX="175.0" layoutY="694.0" prefHeight="26.0" prefWidth="225.0" />
+      <Text layoutX="23.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qual foi a última consulta com o dentista">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ja foi submetido a anestesia odontológica?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="837.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teve alguma reação?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="876.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gengiva sangra com frequência?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="914.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Possui sensibilidade nos dentes?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="947.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Range os dentes?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="989.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ja teve alguma bolha ou machucado na boca ?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtBoca02" layoutX="362.0" layoutY="740.0" prefHeight="26.0" prefWidth="191.0" />
+      <TextField fx:id="txtBoca03" layoutX="237.0" layoutY="817.0" />
+      <TextField fx:id="txtBoca04" layoutX="331.0" layoutY="857.0" />
+      <TextField fx:id="txtBoca05" layoutX="301.0" layoutY="894.0" />
+      <TextField fx:id="txtBoca07" layoutX="406.0" layoutY="969.0" />
+      <TextField fx:id="txtBoca06" layoutX="175.0" layoutY="927.0" />
+      <Text layoutX="19.0" layoutY="1026.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atualmente está sentindo dor ?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btSalvar" layoutX="492.0" layoutY="1079.0" mnemonicParsing="false" onAction="#actionSalvar" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #009000; -fx-background-radius: 10;" text="Salvar" />
+      <RadioButton fx:id="btpositivo01" layoutX="135.0" layoutY="489.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btSim01" layoutX="547.0" layoutY="66.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim02" layoutX="547.0" layoutY="103.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim03" layoutX="547.0" layoutY="138.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim04" layoutX="546.0" layoutY="170.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp4" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim05" layoutX="548.0" layoutY="210.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp5" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim06" layoutX="547.0" layoutY="250.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp6" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim07" layoutX="549.0" layoutY="288.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp7" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim08" layoutX="547.0" layoutY="329.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp8" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim09" layoutX="549.0" layoutY="367.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp9" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btSim10" layoutX="551.0" layoutY="406.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoOp10" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btNao01" layoutX="738.0" layoutY="66.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao02" layoutX="739.0" layoutY="102.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao03" layoutX="739.0" layoutY="134.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao04" layoutX="739.0" layoutY="171.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao05" layoutX="739.0" layoutY="208.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao06" layoutX="740.0" layoutY="249.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao07" layoutX="740.0" layoutY="288.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao08" layoutX="741.0" layoutY="328.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao09" layoutX="740.0" layoutY="364.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNao10" layoutX="741.0" layoutY="403.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoOp10">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btpositivo02" layoutX="135.0" layoutY="520.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="16.0" />
+      <RadioButton fx:id="btpositivo03" layoutX="135.0" layoutY="554.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo04" layoutX="135.0" layoutY="584.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo05" layoutX="135.0" layoutY="619.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo06" layoutX="323.0" layoutY="489.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo07" layoutX="323.0" layoutY="520.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo08" layoutX="323.0" layoutY="554.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo09" layoutX="323.0" layoutY="584.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo10" layoutX="323.0" layoutY="619.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo11" layoutX="467.0" layoutY="489.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btpositivo12" layoutX="467.0" layoutY="518.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="16.0" />
+      <RadioButton fx:id="btpositivo013" layoutX="467.0" layoutY="555.0" mnemonicParsing="false" />
+      <RadioButton fx:id="btBocaSim11" layoutX="396.0" layoutY="782.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoBoca1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btBocaNao11" layoutX="505.0" layoutY="782.0" mnemonicParsing="false" text="Não" toggleGroup="$GrupoBoca1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btBocaNao12" layoutX="409.0" layoutY="1009.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="GrupoBoca2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btBocaSim12" layoutX="299.0" layoutY="1009.0" mnemonicParsing="false" text="Sim" toggleGroup="$GrupoBoca2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

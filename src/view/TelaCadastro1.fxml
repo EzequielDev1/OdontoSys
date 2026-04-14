@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaCad1">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <ImageView fitHeight="728.0" fitWidth="1088.0" layoutX="-9.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/designLogin.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="141.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seja Bem-Vindo">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="222.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="à">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="169.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OdontoSys">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="459.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNome" layoutX="456.0" layoutY="113.0" prefHeight="45.0" prefWidth="312.0" style="-fx-background-radius: 15;" />
+            <TextField fx:id="txtEmail" layoutX="456.0" layoutY="213.0" prefHeight="45.0" prefWidth="312.0" style="-fx-background-radius: 15;" />
+            <Text layoutX="461.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="461.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="txtSenha" layoutX="456.0" layoutY="312.0" prefHeight="43.0" prefWidth="314.0" style="-fx-background-radius: 15;" />
+            <Button fx:id="btProximo" layoutX="575.0" layoutY="400.0" mnemonicParsing="false" onAction="#actionProximo" prefHeight="41.0" prefWidth="96.0" style="-fx-background-radius: 15; -fx-background-color: #0F72D2;" />
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="603.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconSeta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

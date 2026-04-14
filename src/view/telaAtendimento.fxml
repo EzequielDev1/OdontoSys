@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaAtendimento">
+   <children>
+      <Line endX="572.4666137695312" endY="-3.814697265625E-6" layoutX="366.0" layoutY="52.0" startX="-100.0" stroke="DODGERBLUE" strokeWidth="3.0" />
+      <Text fill="#1a0aa9" layoutX="288.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATENDIMENTO" wrappingWidth="310.9100036621094">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="277.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome completo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNome" layoutX="266.0" layoutY="89.0" onKeyPressed="#actionMenuType" onKeyTyped="#actionMenuType" onMouseClicked="#actionMenuClick" prefHeight="34.0" prefWidth="397.0" style="-fx-background-radius: 15;" />
+      <Button fx:id="btPesquisar" layoutX="891.0" layoutY="85.0" mnemonicParsing="false" onAction="#actionPesquisar" prefHeight="35.0" prefWidth="112.0" style="-fx-background-color: #009000; -fx-background-radius: 15;" text="Pesquisar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconLupa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tableAtendimento" layoutX="253.0" layoutY="189.0" prefHeight="516.0" prefWidth="826.0">
+        <columns>
+          <TableColumn fx:id="columnHorario" prefWidth="158.4000701904297" text="Horário do Atendimento" />
+          <TableColumn fx:id="columnData" prefWidth="117.8665771484375" text="Data da Consulta" />
+            <TableColumn fx:id="columnPaciente" prefWidth="375.46661376953125" text="Nome do Paciente" />
+            <TableColumn fx:id="columnStatus" prefWidth="168.800048828125" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btCancelar" layoutX="269.0" layoutY="137.0" mnemonicParsing="false" onAction="#actionCancelar" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #BC3333; -fx-background-radius: 15;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconCancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btProntuario" layoutX="616.0" layoutY="139.0" mnemonicParsing="false" onAction="#actionProntuario" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: b8b814; -fx-background-radius: 15;" text="Prontuário" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconAgendar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btRenovarDados" layoutX="1010.0" layoutY="139.0" mnemonicParsing="false" onAction="#actionRenovarDados" prefHeight="24.0" prefWidth="42.0" style="-fx-background-color: #e2edff; -fx-background-radius: 15;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="1020.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/IconeRenovar.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="24.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+      <Pane layoutX="9.0" prefHeight="720.0" prefWidth="241.0" style="-fx-background-color: #79B2E9;">
+         <children>
+            <Pane layoutX="-3.0" layoutY="-2.0" prefHeight="721.0" prefWidth="210.0" style="-fx-background-color: #1E90FF;">
+               <children>
+                  <Pane layoutX="-23.0" layoutY="1.0" prefHeight="721.0" prefWidth="200.0" style="-fx-background-color: #381EFF;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="124.0" layoutX="70.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/OdontoSys-master%20(1)/OdontoSys-master/OdontoSys/src/icons/iconDente.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ODONTO">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="100.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYS">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtUser" fill="WHITE" layoutX="72.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btSair" layoutX="64.0" layoutY="648.0" mnemonicParsing="false" onAction="#actionSair" prefHeight="42.0" prefWidth="102.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" text="Sair">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btPagamento" layoutX="55.0" layoutY="431.0" mnemonicParsing="false" onAction="#actionPagamento" prefHeight="42.0" prefWidth="120.0" style="-fx-border-radius: 10; -fx-background-radius: 15; -fx-border-color: #ffffff; -fx-background-color: #381EFF; -fx-border-width: 2;" text="Pagamento" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btPaciente" layoutX="55.0" layoutY="576.0" mnemonicParsing="false" onAction="#actionPaciente" prefHeight="42.0" prefWidth="120.0" style="-fx-border-radius: 10; -fx-background-radius: 15; -fx-border-color: #ffffff; -fx-background-color: #381EFF; -fx-border-width: 2;" text="Pacientes" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btFuncionario" layoutX="55.0" layoutY="502.0" mnemonicParsing="false" onAction="#actionFuncionario" prefHeight="42.0" prefWidth="119.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-width: 2; -fx-background-color: #381EFF;" text="Funcionários" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btAgendamento" layoutX="55.0" layoutY="288.0" mnemonicParsing="false" onAction="#actionAgendamento" prefHeight="42.0" prefWidth="119.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-width: 2; -fx-background-color: #381EFF;" text="Agendamento" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btAtendimento" layoutX="55.0" layoutY="359.0" mnemonicParsing="false" onAction="#actionAtendimento" prefHeight="42.0" prefWidth="120.0" style="-fx-border-radius: 10; -fx-background-radius: 15; -fx-border-color: #ffffff; -fx-background-color: #381EFF; -fx-border-width: 2;" text="Atendimento" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" offsetY="3.0" />
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <DatePicker fx:id="txtDataAtend" layoutX="690.0" layoutY="89.0" prefHeight="35.0" />
+      <Text layoutX="690.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pesquisar por data">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

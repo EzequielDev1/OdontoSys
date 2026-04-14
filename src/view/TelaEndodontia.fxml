@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaEndodontia">
+   <children>
+      <RadioButton fx:id="btEndoSim1" layoutX="642.0" layoutY="40.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao1" layoutX="752.0" layoutY="41.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia1" layoutX="51.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Está com dor no dente atualmente?" wrappingWidth="288.803466796875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim2" layoutX="642.0" layoutY="72.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao2" layoutX="752.0" layoutY="73.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia2" layoutX="50.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A dor é constante (sem estímulo)?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim3" layoutX="643.0" layoutY="106.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao3" layoutX="752.0" layoutY="106.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia3" layoutX="50.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A dor aparece com alimentos ou líquidos frios?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtEndodontia4" layoutX="48.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A dor aparece com alimentos ou líquidos quentes?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim4" layoutX="643.0" layoutY="141.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao4" layoutX="752.0" layoutY="141.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia5" layoutX="48.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A dor aparece quando mastiga?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim5" layoutX="643.0" layoutY="176.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao5" layoutX="752.0" layoutY="176.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia6" layoutX="47.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Já sofreu trauma (batida, fratura) neste dente?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim6" layoutX="643.0" layoutY="207.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao6" layoutX="753.0" layoutY="207.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia7" layoutX="47.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Já fez tratamento de canal neste dente antes?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim7" layoutX="643.0" layoutY="240.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao7" layoutX="753.0" layoutY="241.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia8" layoutX="47.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Já sofreu trauma (batida, fratura) neste dente?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim8" layoutX="643.0" layoutY="275.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao8" layoutX="753.0" layoutY="275.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia9" layoutX="48.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percebeu escurecimento do dente?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim9" layoutX="643.0" layoutY="312.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao9" layoutX="753.0" layoutY="312.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="txtEndodontia10" layoutX="45.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notou inchaço na gengiva próximo ao dente?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btEndoSim10" layoutX="643.0" layoutY="346.0" mnemonicParsing="false" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btEndoNao10" layoutX="752.0" layoutY="346.0" mnemonicParsing="false" text="Não">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="653.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/OdontoSys-master/OdontoSys-master/OdontoSys/src/icons/iconCancelar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btSalvar" layoutX="498.0" layoutY="407.0" mnemonicParsing="false" onAction="#actionSalvar" prefHeight="40.0" prefWidth="146.0" style="-fx-background-radius: 15; -fx-background-color: #32A24E;" text=" Salvar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Cadastrar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="461.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/OdontoSys/src/icons/iconSave.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="652.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/OdontoSys/src/icons/iconCancelar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
